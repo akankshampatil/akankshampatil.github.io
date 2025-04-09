@@ -25,7 +25,7 @@ const project1 = `
   <h2>Analog Integrated Circuit Design Project</h2>
   <p><strong>Duration:</strong> Jan – Apr 2024</p>
   <p>Designed a 2-stage op-amp with 2756.25 V/V gain and 53° phase margin using Cadence and the TSMC 0.6µm process. Verified frequency response, gain, and CMRR through simulation.</p>
-  <p><strong>GitHub:</strong> Coming Soon</p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/akankshampatil/analog-integrated-circuit-design/tree/main"> 2-stage Op-amp</p>
   <p><strong>Technologies:</strong> Cadence Virtuoso, SPICE, CMOS</p>
   <p><strong>Learnings:</strong> Bias tuning, design trade-offs in high-gain op-amps</p>
   <p><strong>Future Work:</strong> Layout extraction and corner analysis</p>
