@@ -1,0 +1,105 @@
+<section class="section">
+  <h2>My Experience</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal(renesasHTML)">
+      <img src="images/exp_renesas.jpg" alt="Renesas">
+      <div class="card-body">
+        <h3 class="card-title">Renesas Electronics</h3>
+        <p class="card-subtitle">Field Application Engineer Intern</p>
+      </div>
+    </div>
+    <div class="card" onclick="openModal(zipHTML)">
+      <img src="images/exp_zip.jpg" alt="ZIP Launchpad">
+      <div class="card-body">
+        <h3 class="card-title">ZIP Launchpad</h3>
+        <p class="card-subtitle">Electrical Intern</p>
+      </div>
+    </div>
+    <div class="card" onclick="openModal(sdsuHTML)">
+      <img src="images/exp_sdsu.jpg" alt="SDSU">
+      <div class="card-body">
+        <h3 class="card-title">San Diego State University</h3>
+        <p class="card-subtitle">Teaching Associate</p>
+      </div>
+    </div>
+    <div class="card" onclick="openModal(hyperionHTML)">
+      <img src="images/exp_hyperion.jpg" alt="Team Hyperion">
+      <div class="card-body">
+        <h3 class="card-title">Team Hyperion</h3>
+        <p class="card-subtitle">Autonomous & Electrical Head</p>
+      </div>
+    </div>
+    <div class="card" onclick="openModal(electronetHTML)">
+      <img src="images/exp_electronet.jpg" alt="Electronet">
+      <div class="card-body">
+        <h3 class="card-title">Electronet Equipments</h3>
+        <p class="card-subtitle">QA Intern</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const renesasHTML = `
+  <h2>Renesas Electronics – Field Applications Intern</h2>
+  <p><strong>Duration:</strong> May 2024 – Aug 2024<br>
+  <strong>Tools:</strong> GreenPAK Designer, Inductive Sensors, Current Profiling<br>
+  <strong>Highlights:</strong>
+  <ul>
+    <li>Implemented a sleep-wake timing profile on ZMID4200 IC to reduce current consumption</li>
+    <li>Analyzed response under different duty cycles; published results in internal app notes</li>
+    <li>Created design diagrams for customer demos across 3 platforms</li>
+  </ul>
+  <em>Future Work:</em> Automate sleep intervals based on sensed position data.
+  `;
+
+const zipHTML = `
+  <h2>ZIP Launchpad – Electrical Intern</h2>
+  <p><strong>Duration:</strong> Nov 2023 – May 2024<br>
+  <strong>Tools:</strong> LTspice, MATLAB, CAD, Simulink<br>
+  <strong>Highlights:</strong>
+  <ul>
+    <li>Led design of PCB-level power control module</li>
+    <li>Created simulation models of load-sharing and virtual storage units</li>
+    <li>Collaborated with embedded developers to integrate power sensing</li>
+  </ul>
+  <em>Future Work:</em> Incorporate renewable energy feedback into storage model.
+  `;
+
+const sdsuHTML = `
+  <h2>SDSU – Teaching Associate</h2>
+  <p><strong>Duration:</strong> Jan 2024 – Present<br>
+  <strong>Role:</strong> Physics and Measurement Lab Instructor<br>
+  <ul>
+    <li>Guided students in hands-on electricity and magnetism experiments</li>
+    <li>Oversaw circuit-building and measurement sessions with oscilloscopes and probes</li>
+    <li>Improved lab rubric to evaluate analytical reasoning</li>
+  </ul>
+  <em>Future Work:</em> Add lab modules for frequency domain and BJT/MOS behavior.
+  `;
+
+const hyperionHTML = `
+  <h2>Team Hyperion – Autonomous & Electrical Head</h2>
+  <p><strong>Duration:</strong> Jul 2021 – Aug 2023<br>
+  <strong>Progression:</strong> Member → Solar Systems → Transmission & Autonomous Head<br>
+  <strong>Tools:</strong> I2C, CAN, RF modules, BMS, Simulink, C++<br>
+  <ul>
+    <li>Designed powertrain circuits for 2 solar electric vehicles</li>
+    <li>Optimized MPPT controllers using real-time solar tracking</li>
+    <li>Developed vision-based lane detection with Raspberry Pi + OpenCV</li>
+    <li>Team achieved 4th at ESVC and 2nd at SUVC</li>
+  </ul>
+  <em>Future Work:</em> Fully autonomous control loop integrated with vehicle dashboard.
+  `;
+
+const electronetHTML = `
+  <h2>Electronet Equipments – QA Intern</h2>
+  <p><strong>Duration:</strong> Jan 2022 – Feb 2022<br>
+  <strong>Role:</strong> SoC and Power Equipment Validation<br>
+  <ul>
+    <li>Validated power modules and SoCs under variable load conditions</li>
+    <li>Built Python scripts to analyze system errors vs calibration limits</li>
+  </ul>
+  <em>Future Work:</em> Migrate validation flow to Python+GUI testbench framework.
+  `;
+</script>

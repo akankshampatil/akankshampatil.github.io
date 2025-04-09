@@ -1,0 +1,118 @@
+<section class="section">
+  <h2>My Projects</h2>
+  <div class="card-grid">
+
+    <div class="card" onclick="openModal(reconfigHTML)">
+      <img src="images/proj_reconfig.jpg" alt="Reconfigurable Logic">
+      <div class="card-body">
+        <h3 class="card-title">Reconfigurable Logic for IoT</h3>
+        <p class="card-subtitle">Digital VLSI | Verilog</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal(vlsiHTML)">
+      <img src="images/proj_vlsi.jpg" alt="VLSI Course">
+      <div class="card-body">
+        <h3 class="card-title">VLSI Circuit Design Projects</h3>
+        <p class="card-subtitle">Digital | Simulation | Sizing</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal(opampHTML)">
+      <img src="images/proj_opamp.jpg" alt="Opamp">
+      <div class="card-body">
+        <h3 class="card-title">Two-Stage Op-Amp</h3>
+        <p class="card-subtitle">Analog | 2756 V/V | 53° Phase Margin</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal(dcdcHTML)">
+      <img src="images/proj_dcdc.jpg" alt="DC-DC Converter">
+      <div class="card-body">
+        <h3 class="card-title">DC-DC Converter (IoT)</h3>
+        <p class="card-subtitle">Analog | 180nm CMOS | LTSpice</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal(powersiHTML)">
+      <img src="images/proj_powersi.jpg" alt="PowerSI">
+      <div class="card-body">
+        <h3 class="card-title">PowerSI Noise Optimization</h3>
+        <p class="card-subtitle">Power | 5-Layer PCB | Decoupling</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal(mstripHTML)">
+      <img src="images/proj_microstrip.jpg" alt="Microstrip">
+      <div class="card-body">
+        <h3 class="card-title">Microstrip Line + Antenna</h3>
+        <p class="card-subtitle">RF | HFSS | TXLine | ADS</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const reconfigHTML = `
+  <h2>Reconfigurable Logic for IoT</h2>
+  <p><strong>Tools:</strong> Verilog, Vivado, Xilinx FPGA</p>
+  <ul>
+    <li>Designed low-power + high-performance FSM-based logic block</li>
+    <li>Used PLL to switch dynamic frequency profiles</li>
+    <li>Simulated across 4 corner cases with assertions</li>
+  </ul>
+  <a href="https://github.com/akankshampatil/reconfigurable-logic-iot" target="_blank">GitHub Repo</a>
+`;
+
+const vlsiHTML = `
+  <h2>VLSI Circuit Design Course Projects</h2>
+  <ul>
+    <li>Inverter Delay Analysis using FO4 and Logical Effort</li>
+    <li>2-input NAND & NOR Gate sizing for matched delay</li>
+    <li>Transmission Gate vs CMOS Inverter comparison</li>
+    <li>MOS IV modeling (nMOS + pMOS) and RC delay mapping</li>
+  </ul>
+  <a href="https://github.com/akankshampatil/vlsi-course-projects" target="_blank">GitHub Repo</a>
+`;
+
+const opampHTML = `
+  <h2>Two-Stage Op-Amp Design</h2>
+  <p><strong>Tech:</strong> 0.4µm TSMC | Gain: 2756 V/V | Phase Margin: 53°</p>
+  <ul>
+    <li>Achieved stable 1.1MHz unity-gain bandwidth</li>
+    <li>Compensated with Miller Cap + Push-Pull driver</li>
+  </ul>
+  <a href="https://github.com/akankshampatil/analog-opamp-design" target="_blank">GitHub Repo</a>
+`;
+
+const dcdcHTML = `
+  <h2>DC-DC Converter for IoT</h2>
+  <p><strong>Tech:</strong> 180nm CMOS | Tools: LTSpice, Cadence</p>
+  <ul>
+    <li>Designed low-power buck converter with soft start</li>
+    <li>92% peak efficiency and stable Vout <50mV ripple</li>
+  </ul>
+  <a href="https://github.com/akankshampatil/dcdc-converter-iot" target="_blank">GitHub Repo</a>
+`;
+
+const powersiHTML = `
+  <h2>Power & Ground Noise Optimization</h2>
+  <p><strong>Platform:</strong> PowerSI, Cadence Allegro</p>
+  <ul>
+    <li>Simulated impedance using Z-parameter extraction</li>
+    <li>Reduced PDN noise by 30% using cap placement</li>
+  </ul>
+  <a href="https://github.com/akankshampatil/powersi-noise-optimization" target="_blank">GitHub Repo</a>
+`;
+
+const mstripHTML = `
+  <h2>Microstrip + Antenna Design</h2>
+  <p><strong>Platform:</strong> ADS, HFSS, TXLine</p>
+  <ul>
+    <li>Designed 50-ohm matched transmission line</li>
+    <li>Modeled gain pattern, return loss, and S11</li>
+  </ul>
+  <a href="https://github.com/akankshampatil/microstrip-rf-design" target="_blank">GitHub Repo</a>
+`;
+</script>
