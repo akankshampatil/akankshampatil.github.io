@@ -1,3 +1,4 @@
+<!-- ✅ FINAL index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akanksha Patil | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="nav-logo">Akanksha Patil</div>
     <ul class="nav-links">
-      <li><a href="#" onclick="navigate('home')">Home</a></li>
-      <li><a href="#" onclick="navigate('experience')">Experience</a></li>
-      <li><a href="#" onclick="navigate('projects')">Projects</a></li>
-      <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <main id="main-content"></main>
-
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-      <div id="modal-body"></div>
+  <section class="section intro-section">
+    <img src="images/profile.jpg" alt="Akanksha Patil" class="profile-pic" />
+    <div>
+      <h1>Akanksha Patil</h1>
+      <p><strong>Graduate Student | MS in Electrical & Computer Engineering | SDSU</strong></p>
+      <p>
+        I’m an aspiring hardware engineer combining deep circuit theory with modern chip design. With a strong foundation in CMOS, Verilog, and power converters, I enjoy blending theoretical models with practical simulations. I’m passionate about chip-level innovation, energy efficiency, and circuit robustness. I’ve also contributed to real-world EV systems and mentored undergraduate engineers through academic labs.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="section">
+    <h2>Skills & Technologies</h2>
+    <ul class="skills-list">
+      <li><strong>Digital:</strong> Verilog, FSM, RTL, Synthesis, Vivado, Microwind, Xilinx</li>
+      <li><strong>Analog:</strong> OTA, Op-Amps, Comparator, Current Mirror, Phase Margin, Cadence</li>
+      <li><strong>Power:</strong> Buck-Boost Converters, MPPT, Power Stage Design, LTSpice</li>
+      <li><strong>RF & Microwave:</strong> TXLine, Smith Chart, HFSS, VSWR, S11</li>
+      <li><strong>Simulation:</strong> HSPICE, Cadence Virtuoso, MATLAB, Python, Multisim</li>
+      <li><strong>PCB Design:</strong> Altium, Multilayer Stackup, SI, Reflection</li>
+      <li><strong>Other Tools:</strong> Git, UNIX, Lab Instruments, Oscilloscopes, MobaXterm</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Explore My Work</h2>
+    <div class="card-grid">
+      <div class="card" onclick="navigate('experience')">
+        <img src="images/exp_ti.jpg" alt="Experience">
+        <div class="card-body">
+          <h3 class="card-title">Experience</h3>
+          <p class="card-subtitle">Renesas · Team Hyperion · QA · ZIP Launchpad</p>
+        </div>
+      </div>
+      <div class="card" onclick="navigate('projects')">
+        <img src="images/proj_main.jpg" alt="Projects">
+        <div class="card-body">
+          <h3 class="card-title">Projects</h3>
+          <p class="card-subtitle">CTAT Sensor · VLSI · Power Converter · Robot · PCB</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Fun Fact</h2>
+    <p>
+      At Team Hyperion, I helped engineer a national-level solar-electric vehicle. I integrated Lidar, GPS, MPPT, and control logic to make the car energy-aware and obstacle-avoiding — all while managing a team of student engineers.
+    </p>
+  </section>
 </body>
 </html>

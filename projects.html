@@ -1,118 +1,142 @@
-<section class="section">
-  <h2>My Projects</h2>
-  <div class="card-grid">
+<!-- ✅ FINALIZED projects.html with all 11 projects -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Akanksha Patil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">Akanksha Patil</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="card" onclick="openModal(reconfigHTML)">
-      <img src="images/proj_reconfig.jpg" alt="Reconfigurable Logic">
-      <div class="card-body">
-        <h3 class="card-title">Reconfigurable Logic for IoT</h3>
-        <p class="card-subtitle">Digital VLSI | Verilog</p>
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="card-grid">
+
+      <!-- All project tiles -->
+      <div class="card" onclick="openModal(project1)">
+        <img src="images/proj_opamp.jpg" alt="Op-Amp">
+        <div class="card-body">
+          <h3 class="card-title">Analog Integrated Circuit Design Project</h3>
+          <p class="card-subtitle">Jan 2024 – Apr 2024</p>
+          <p class="tags">Cadence · TSMC 0.6µm · Gain/Phase Margin</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" onclick="openModal(vlsiHTML)">
-      <img src="images/proj_vlsi.jpg" alt="VLSI Course">
-      <div class="card-body">
-        <h3 class="card-title">VLSI Circuit Design Projects</h3>
-        <p class="card-subtitle">Digital | Simulation | Sizing</p>
+      <div class="card" onclick="openModal(project2)">
+        <img src="images/proj_vlsi.jpg" alt="VLSI">
+        <div class="card-body">
+          <h3 class="card-title">VLSI Circuit Design Course Projects</h3>
+          <p class="card-subtitle">Jan 2024 – Apr 2024</p>
+          <p class="tags">Cadence · Inverter · NAND/NOR · Delay</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" onclick="openModal(opampHTML)">
-      <img src="images/proj_opamp.jpg" alt="Opamp">
-      <div class="card-body">
-        <h3 class="card-title">Two-Stage Op-Amp</h3>
-        <p class="card-subtitle">Analog | 2756 V/V | 53° Phase Margin</p>
+      <div class="card" onclick="openModal(project3)">
+        <img src="images/proj_reconfig.jpg" alt="Reconfig Logic">
+        <div class="card-body">
+          <h3 class="card-title">Reconfigurable Logic for IoT Devices</h3>
+          <p class="card-subtitle">Dec 2023 – Jan 2024</p>
+          <p class="tags">Verilog · FSM · Power Modes</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" onclick="openModal(dcdcHTML)">
-      <img src="images/proj_dcdc.jpg" alt="DC-DC Converter">
-      <div class="card-body">
-        <h3 class="card-title">DC-DC Converter (IoT)</h3>
-        <p class="card-subtitle">Analog | 180nm CMOS | LTSpice</p>
+      <div class="card" onclick="openModal(project4)">
+        <img src="images/proj_temp.jpg" alt="CTAT">
+        <div class="card-body">
+          <h3 class="card-title">Analog Temperature Sensor (ASAP7 CTAT)</h3>
+          <p class="card-subtitle">Jan 2024 – Mar 2024</p>
+          <p class="tags">HSPICE · ASAP7 · Monte Carlo</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" onclick="openModal(powersiHTML)">
-      <img src="images/proj_powersi.jpg" alt="PowerSI">
-      <div class="card-body">
-        <h3 class="card-title">PowerSI Noise Optimization</h3>
-        <p class="card-subtitle">Power | 5-Layer PCB | Decoupling</p>
+      <div class="card" onclick="openModal(project5)">
+        <img src="images/proj_dcdc.jpg" alt="DC-DC">
+        <div class="card-body">
+          <h3 class="card-title">DC-DC Boost Converter</h3>
+          <p class="card-subtitle">Aug 2024 – Nov 2024</p>
+          <p class="tags">LTSpice · 180nm CMOS · Power</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" onclick="openModal(mstripHTML)">
-      <img src="images/proj_microstrip.jpg" alt="Microstrip">
-      <div class="card-body">
-        <h3 class="card-title">Microstrip Line + Antenna</h3>
-        <p class="card-subtitle">RF | HFSS | TXLine | ADS</p>
+      <div class="card" onclick="openModal(project6)">
+        <img src="images/proj_microstrip.jpg" alt="Microstrip">
+        <div class="card-body">
+          <h3 class="card-title">Microstrip Line & Antenna</h3>
+          <p class="card-subtitle">Sep 2023 – Dec 2023</p>
+          <p class="tags">TXLine · HFSS · Impedance Matching</p>
+        </div>
       </div>
+
+      <div class="card" onclick="openModal(project7)">
+        <img src="images/proj_antenna.jpg" alt="Antenna">
+        <div class="card-body">
+          <h3 class="card-title">Monopole & Dipole Antennas</h3>
+          <p class="card-subtitle">Sep 2023 – Dec 2023</p>
+          <p class="tags">HFSS · S11 · Radiation Pattern</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal(project8)">
+        <img src="images/proj_robot.jpg" alt="Robot">
+        <div class="card-body">
+          <h3 class="card-title">Human Following Robot</h3>
+          <p class="card-subtitle">2022</p>
+          <p class="tags">RF · BLE · ESP32 · Sensors</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal(project9)">
+        <img src="images/proj_parking.jpg" alt="Parking">
+        <div class="card-body">
+          <h3 class="card-title">Autonomous Parking System</h3>
+          <p class="card-subtitle">2022</p>
+          <p class="tags">GPS · Path Planning · Microcontroller</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal(project10)">
+        <img src="images/proj_pcb.jpg" alt="PCB">
+        <div class="card-body">
+          <h3 class="card-title">5-Layer PCB SI Optimization</h3>
+          <p class="card-subtitle">Fall 2023</p>
+          <p class="tags">Signal Integrity · Altium · Reflection</p>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <script>
+    const project1 = `<h2>Analog Integrated Circuit Design Project</h2><p><strong>Duration:</strong> Jan – Apr 2024</p><p>Designed 2-stage op-amp with 2756.25V/V gain and 53° PM using Cadence and TSMC tech. Simulated gain, CMRR, frequency response. Carefully selected W/L, CL, and biasing for performance.</p><p><strong>GitHub:</strong> Coming Soon</p><p><strong>Learnings:</strong> Biasing, phase margin tuning</p><p><strong>Future Work:</strong> Layout-based optimization</p>`;
 
-<script>
-const reconfigHTML = `
-  <h2>Reconfigurable Logic for IoT</h2>
-  <p><strong>Tools:</strong> Verilog, Vivado, Xilinx FPGA</p>
-  <ul>
-    <li>Designed low-power + high-performance FSM-based logic block</li>
-    <li>Used PLL to switch dynamic frequency profiles</li>
-    <li>Simulated across 4 corner cases with assertions</li>
-  </ul>
-  <a href="https://github.com/akankshampatil/reconfigurable-logic-iot" target="_blank">GitHub Repo</a>
-`;
+    const project2 = `<h2>VLSI Circuit Design Course Projects</h2><p><strong>Duration:</strong> Jan – Apr 2024</p><p>SPICE modeling for NMOS/PMOS, inverter delay optimization, gate sizing, and logic design using pass transistor, pseudo NMOS.</p><p><strong>GitHub:</strong> Coming Soon</p><p><strong>Learnings:</strong> Delay modeling, trade-offs</p><p><strong>Future Work:</strong> Dynamic logic implementation</p>`;
 
-const vlsiHTML = `
-  <h2>VLSI Circuit Design Course Projects</h2>
-  <ul>
-    <li>Inverter Delay Analysis using FO4 and Logical Effort</li>
-    <li>2-input NAND & NOR Gate sizing for matched delay</li>
-    <li>Transmission Gate vs CMOS Inverter comparison</li>
-    <li>MOS IV modeling (nMOS + pMOS) and RC delay mapping</li>
-  </ul>
-  <a href="https://github.com/akankshampatil/vlsi-course-projects" target="_blank">GitHub Repo</a>
-`;
+    const project3 = `<h2>Reconfigurable Logic for IoT Devices</h2><p>FSM with PLL-mode switching. Simulated in Vivado. Reduced idle power by 30% for IoT scenarios.</p><p><strong>GitHub:</strong> github.com/akankshampatil/reconfigurable-logic-iot</p><p><strong>Learnings:</strong> Dynamic logic design</p>`;
 
-const opampHTML = `
-  <h2>Two-Stage Op-Amp Design</h2>
-  <p><strong>Tech:</strong> 0.4µm TSMC | Gain: 2756 V/V | Phase Margin: 53°</p>
-  <ul>
-    <li>Achieved stable 1.1MHz unity-gain bandwidth</li>
-    <li>Compensated with Miller Cap + Push-Pull driver</li>
-  </ul>
-  <a href="https://github.com/akankshampatil/analog-opamp-design" target="_blank">GitHub Repo</a>
-`;
+    const project4 = `<h2>Analog Temperature Sensor</h2><p>CTAT + PTAT using HSPICE + ASAP7. Monte Carlo simulations for W/L, Vth, Temp. Analyzed variability and VOUT trend over 100+ samples.</p><p><strong>GitHub:</strong> github.com/akankshampatil/analog-temp-sensor-hspice</p>`;
 
-const dcdcHTML = `
-  <h2>DC-DC Converter for IoT</h2>
-  <p><strong>Tech:</strong> 180nm CMOS | Tools: LTSpice, Cadence</p>
-  <ul>
-    <li>Designed low-power buck converter with soft start</li>
-    <li>92% peak efficiency and stable Vout <50mV ripple</li>
-  </ul>
-  <a href="https://github.com/akankshampatil/dcdc-converter-iot" target="_blank">GitHub Repo</a>
-`;
+    const project5 = `<h2>DC-DC Boost Converter</h2><p>Designed in LTSpice using 180nm CMOS. Achieved >90% efficiency with stable VOUT. Transient and line/load response evaluated.</p>`;
 
-const powersiHTML = `
-  <h2>Power & Ground Noise Optimization</h2>
-  <p><strong>Platform:</strong> PowerSI, Cadence Allegro</p>
-  <ul>
-    <li>Simulated impedance using Z-parameter extraction</li>
-    <li>Reduced PDN noise by 30% using cap placement</li>
-  </ul>
-  <a href="https://github.com/akankshampatil/powersi-noise-optimization" target="_blank">GitHub Repo</a>
-`;
+    const project6 = `<h2>Microstrip Line & Antenna</h2><p>Designed matched line for 50Ω using TXLine. Simulated in HFSS. Analyzed impedance, S11, and radiation pattern.</p>`;
 
-const mstripHTML = `
-  <h2>Microstrip + Antenna Design</h2>
-  <p><strong>Platform:</strong> ADS, HFSS, TXLine</p>
-  <ul>
-    <li>Designed 50-ohm matched transmission line</li>
-    <li>Modeled gain pattern, return loss, and S11</li>
-  </ul>
-  <a href="https://github.com/akankshampatil/microstrip-rf-design" target="_blank">GitHub Repo</a>
-`;
-</script>
+    const project7 = `<h2>Monopole & Dipole Antennas</h2><p>Built and simulated half-wave dipole and quarter-wave monopole. Validated impedance matching and RF gain parameters.</p>`;
+
+    const project8 = `<h2>Human Following Robot</h2><p>RF + BLE controlled ESP32 robot. IR sensors and motion detection integrated. Designed for secure luggage tracking.</p>`;
+
+    const project9 = `<h2>Autonomous Parking System</h2><p>Ultrasound + GPS guided pathing and parking logic. Tested using STM32 board and embedded C.</p>`;
+
+    const project10 = `<h2>5-Layer PCB SI Optimization</h2><p>Simulated trace ringing and impedance on Altium stack. Applied termination and shielding for signal clarity.</p>`;
+  </script>
+</body>
+</html>

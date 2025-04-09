@@ -1,25 +1,16 @@
-const main = document.getElementById("main-content");
-const modal = document.getElementById("modal");
-const modalBody = document.getElementById("modal-body");
+// ✅ FINAL script.js
+function openModal(contentHTML) {
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <span class="modal-close" onclick="this.closest('.modal').remove()">&times;</span>
+      ${contentHTML}
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
 
 function navigate(page) {
-  fetch(`${page}.html`)
-    .then(res => res.text())
-    .then(html => {
-      main.innerHTML = html;
-      window.scrollTo(0, 0);
-    });
+  window.location.href = `${page}.html`;
 }
-
-function openModal(contentHTML) {
-  modalBody.innerHTML = contentHTML;
-  modal.classList.remove("hidden");
-}
-
-function closeModal() {
-  modal.classList.add("hidden");
-  modalBody.innerHTML = "";
-}
-
-// Load home by default
-navigate("home");
