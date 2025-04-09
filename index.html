@@ -7,50 +7,135 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header id="home">
     <div class="intro">
       <h1>Akanksha Patil</h1>
       <p>MS Electrical & Computer Engineering @ SDSU</p>
       <p>RF | VLSI | Analog/Mixed-Signal | Power</p>
       <a href="resume/Fulltime_resume_ap_.pdf" target="_blank" class="btn">Download Resume</a>
-      <a href="mailto:akankshamukeshpatil@gmail.com" class="btn">Contact Me</a>
     </div>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Master’s student at SDSU with hands-on experience in circuit design, simulation, and validation. Skilled in Verilog, Cadence Virtuoso, ADS, HFSS, and power optimization. Passionate about VLSI, RF systems, and Mixed-Signal Design.</p>
-  </section>
+    <p>I'm a passionate Electrical Engineer with strong skills in circuit design, simulation, validation, and prototyping. I specialize in Analog & Mixed-Signal IC design, RF and Microwave engineering, and Digital VLSI. My academic and internship experiences have allowed me to work with tools like Cadence Virtuoso, Keysight ADS, HFSS, LTSpice, and more. I strive to merge theory with industry-ready solutions that are power-efficient, reliable, and scalable.</p>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <h3>Technical Skills</h3>
     <ul>
-      <li>
-        <h3>DC-DC Converter for IoT Devices</h3>
-        <p>180nm CMOS | LTSpice | Cadence Virtuoso. Achieved 92% efficiency and improved transient response.</p>
-      </li>
-      <li>
-        <h3>Microstrip Line & Antenna Design</h3>
-        <p>Keysight ADS | Ansys HFSS. Designed 2.4GHz antennas and microstrip line with <5% impedance deviation.</p>
-      </li>
-      <li>
-        <h3>Reconfigurable Logic for IoT</h3>
-        <p>Vivado | Verilog. Developed dual-mode logic block with PLL and FSM for power-performance optimization.</p>
-      </li>
+      <li><strong>Tools:</strong> Cadence Virtuoso, LTSpice, PowerSI, MATLAB, Keysight ADS, HFSS, Vivado</li>
+      <li><strong>Languages:</strong> Verilog, C++, Python</li>
+      <li><strong>Hardware:</strong> ESP32, FPGA, Arduino, Oscilloscope, Multimeter</li>
+      <li><strong>Domains:</strong> Analog/Mixed-Signal, RF, Power Electronics, Digital Logic, VLSI, Signal Integrity</li>
     </ul>
+
+    <h3>Fun Fact</h3>
+    <p>I once designed a human-following luggage robot using BLE and RF that placed 3rd in a national competition!</p>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
-    <ul>
-      <li><strong>Field Application Engineer Intern @ Renesas Electronics</strong> (May 2024 - Aug 2024)</li>
-      <li><strong>Electrical Intern @ SDSU ZIP Launchpad</strong> (Nov 2023 - May 2024)</li>
-      <li><strong>Teaching Assistant @ SDSU</strong> (Jan 2024 - Present)</li>
-    </ul>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Field Application Engineer Intern - Renesas Electronics (May 2024 - Aug 2024)</h3>
+      <div class="details">
+        <p>• Reduced current consumption of ZMID4200 using GreenPAK.
+        <br>• Designed wake/sleep timing mechanisms.
+        <br>• Provided customer solutions and block diagrams.
+        <br>• Tools: GreenPAK, Inductive Sensors</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Electrical Intern - SDSU ZIP Launchpad (Nov 2023 - May 2024)</h3>
+      <div class="details">
+        <p>• Designed virtual power device prototypes.
+        <br>• Led PCB design and documentation.
+        <br>• Tools: MATLAB, Cadence Virtuoso, PMICs</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Teaching Assistant - SDSU (Jan 2024 - Present)</h3>
+      <div class="details">
+        <p>• Tutored Physics: Electricity & Magnetism.
+        <br>• Guided Lab Experiments on Newton's Laws, Friction.
+        <br>• Tools: Lab Equipment, PSU, Oscilloscopes</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Electrical & Autonomous Head - Team Hyperion (Jul 2021 - Aug 2023)</h3>
+      <div class="details">
+        <p>• Designed Li-Ion Battery Storage, Buck/Boost Converters.
+        <br>• Developed ECU Systems using I2C, CAN.
+        <br>• Achieved 2nd in SUVC, 4th in ESVC.</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Quality Assurance Intern - Electronet Equipments (Jan 2022 - Feb 2022)</h3>
+      <div class="details">
+        <p>• Validated SoC ICs and PSU units.
+        <br>• Improved efficiency and verification speed.
+        <br>• Tools: SOC Testing, Power Flow Analysis</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>DC-DC Converter for IoT</h3>
+      <div class="details">
+        <p>Designed a low-power buck converter in 180nm CMOS using LTSpice & Cadence. Achieved 92% efficiency.</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Microstrip Line & Antenna Design</h3>
+      <div class="details">
+        <p>Used ADS and HFSS for simulating transmission lines and antennas with <5% impedance deviation.</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Reconfigurable Logic for IoT Devices</h3>
+      <div class="details">
+        <p>Developed low-power/high-performance logic block with FSM, PLL using Verilog & Vivado.</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Power & Ground Noise Optimization</h3>
+      <div class="details">
+        <p>Optimized 5-layer PCB using Cadence PowerSI, reducing voltage noise by 30% using decoupling capacitors.</p>
+      </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+      <h3>Human-Following Robot</h3>
+      <div class="details">
+        <p>RF + BLE controlled robot developed using ESP32 and sensor fusion. Published in IJARSCT 2023.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:akankshamukeshpatil@gmail.com">akankshamukeshpatil@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/akanksha-mukesh-patil" target="_blank">linkedin.com/in/akanksha-mukesh-patil</a></p>
+    <p><strong>Phone:</strong> +1 619 714 0524</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Akanksha Patil | <a href="https://linkedin.com/in/akanksha-mukesh-patil" target="_blank">LinkedIn</a> | <a href="mailto:akankshamukeshpatil@gmail.com">Email</a></p>
+    <p>&copy; 2025 Akanksha Patil | Built with ❤️ | <a href="resume/Fulltime_resume_ap_.pdf" target="_blank">Download Resume</a></p>
   </footer>
+
+  <script>
+    function toggleDetails(card) {
+      const details = card.querySelector(".details");
+      details.style.display = details.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
