@@ -5,23 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akanksha Patil | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/final-style.css" />
+  <link rel="stylesheet" href="assets/css/enhanced-style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <aside class="sidebar">
-    <h2>Akanksha</h2>
-    <nav>
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-      <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
-      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-      <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
-      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
-  </aside>
-
   <div class="toggle-container">
     <label class="switch">
       <input type="checkbox" id="theme-toggle">
@@ -30,56 +18,82 @@
     <span class="mode-label">Dark Mode</span>
   </div>
 
-  <main class="content">
+  <main>
     <section class="hero">
       <h1>Akanksha Patil</h1>
       <p class="subtitle">Graduate Student @ SDSU | VLSI, Analog & Mixed-Signal Design | Seeking Full-Time Roles 2025</p>
     </section>
 
-    <section id="about">
+    <section>
       <h2><i class="fas fa-user"></i> About Me</h2>
-      <p>I’m an ECE master's student at SDSU with experience in analog/digital design, validation, embedded systems, and power electronics. I'm passionate about developing impactful semiconductor and mixed-signal systems.</p>
+      <p>I'm an engineer specializing in VLSI and embedded systems with hands-on experience in analog and digital design, simulation, and IC validation.</p>
     </section>
 
-    <section id="experience">
+    <section>
       <h2><i class="fas fa-briefcase"></i> Experience</h2>
-      <div class="card"><h3>Renesas Electronics</h3><p>Field Application Engineer Intern (May 2024 – Aug 2024)</p></div>
-      <div class="card"><h3>SDSU</h3><p>Teaching Associate (Jan 2024 – Present)</p></div>
-      <div class="card"><h3>ZIP Launchpad</h3><p>EE Intern (Nov 2023 – May 2024)</p></div>
-    </section>
-
-    <section id="projects">
-      <h2><i class="fas fa-laptop-code"></i> Projects</h2>
-      <div class="gallery">
-        <div class="tile"><img src="assets/img/project1.png" alt="CTAT Sensor"/><p>CTAT/PTAT Sensor</p></div>
-        <div class="tile"><img src="assets/img/project2.png" alt="DC-DC Converter"/><p>DC-DC Converter</p></div>
-        <div class="tile"><img src="assets/img/project3.png" alt="Robot"/><p>Human Following Robot</p></div>
+      <div class="card">
+        <h3>Renesas Electronics America</h3>
+        <p class="role">Field Application Engineer Intern <span class="date">May 2024 – Aug 2024</span></p>
+        <ul>
+          <li>Reduced current draw of ZMID4200 using GreenPAK NVM and optimized timing logic.</li>
+          <li>Worked with clients for troubleshooting, system design, and block diagram creation.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>San Diego State University</h3>
+        <p class="role">Teaching Associate <span class="date">Jan 2024 – Present</span></p>
+        <ul>
+          <li>Tutored physics fundamentals; led Physical Measurement Lab sessions.</li>
+          <li>Guided hands-on experiments and encouraged academic growth.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>ZIP Launchpad</h3>
+        <p class="role">Electrical Engineering Intern <span class="date">Nov 2023 – May 2024</span></p>
+        <ul>
+          <li>Designed energy interface models; built simulation and PCB prototypes.</li>
+        </ul>
       </div>
     </section>
 
-    <section id="education">
+    <section>
+      <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+      <div class="card">
+        <h3>CTAT/PTAT Analog Temperature Sensor</h3>
+        <p>Used ASAP7 PDK and HSPICE for Monte Carlo simulations of CMOS sensor performance.</p>
+        <a href="#">🔗 View GitHub</a>
+      </div>
+      <div class="card">
+        <h3>DC-DC Converter for IoT</h3>
+        <p>Simulated and optimized low-power buck-boost converter in 180nm CMOS using Cadence.</p>
+        <a href="#">🔗 View GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Human Following Robot</h3>
+        <p>ESP32 + RF + BLE autonomous system; 3rd place in university competition.</p>
+        <a href="#">🔗 View GitHub</a>
+      </div>
+    </section>
+
+    <section>
       <h2><i class="fas fa-graduation-cap"></i> Education</h2>
       <ul>
-        <li><strong>SDSU</strong> – MS in ECE (2023–2025)</li>
-        <li><strong>Sinhgad College</strong> – BE in E&TC (2019–2023)</li>
+        <li><strong>SDSU</strong> – MS in Electrical & Computer Engineering (2023–2025)</li>
+        <li><strong>Sinhgad College</strong> – BE in Electronics & Telecommunication (2019–2023)</li>
+        <li><strong>University Honors</strong> – AI & ML Track (2021–2023)</li>
       </ul>
     </section>
 
-    <section id="resume">
-      <h2><i class="fas fa-file-alt"></i> Resume</h2>
-      <iframe src="assets/pdf/Resume.pdf" width="100%" height="500px" style="border: none;"></iframe>
-    </section>
-
-    <section id="contact">
+    <section>
       <h2><i class="fas fa-envelope"></i> Contact</h2>
       <p>Email: <a href="mailto:akankshamukeshpatil@gmail.com">akankshamukeshpatil@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/akanksha-mukesh-patil" target="_blank">linkedin.com/in/akanksha-mukesh-patil</a></p>
     </section>
-
-    <footer>
-      <p>© 2025 Akanksha Patil</p>
-    </footer>
   </main>
+
+  <footer>
+    <p>© 2025 Akanksha Patil</p>
+  </footer>
 
   <script>
     const toggle = document.getElementById('theme-toggle');
