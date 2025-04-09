@@ -114,7 +114,7 @@ const project3 = `
 
     const project4 = `
   <h2>Analog Temperature Sensor</h2>
-  <p><strong>Duration:</strong> Mar – Apr 2024</p>
+  <p><strong>Duration:</strong> Jan – Mar 2025</p>
 
   <p>
     This project demonstrates the development of a CTAT + PTAT based analog temperature sensor using ASAP7 PDK. The design includes diode-connected MOS stages and a subtractor block simulated using HSPICE.
@@ -142,7 +142,7 @@ const project3 = `
 `;
 
 const project5 = `
-  <h2>DC-DC Boost Converter</h2>
+  <h2>High-Efficiency DC-DC Converter for IOT Devices</h2>
   <p><strong>Duration:</strong> Aug – Nov 2024</p>
 
   <p>
@@ -171,7 +171,7 @@ const project5 = `
 `;
 
 const project6 = `
-  <h2>Microstrip Line & Antenna</h2>
+  <h2>Microstrip Line Design and Analysis</h2>
   <p><strong>Duration:</strong> Aug – Oct 2024</p>
 
   <p>
@@ -200,7 +200,7 @@ const project6 = `
 `;
 
 const project7 = `
-  <h2>Monopole & Dipole Antennas</h2>
+  <h2>Half-wave Dipole and Quater-wave Monopole Antenna Simulation Desgin</h2>
   <p><strong>Duration:</strong> Aug – Dec 2023</p>
 
   <p>
@@ -229,8 +229,8 @@ const project7 = `
 `;
 
     const project8 = `
-  <h2>Human Following Robot</h2>
-  <p><strong>Duration:</strong> Jan – Mar 2023</p>
+  <h2>Autonomous Human Following Luggage Carrying Robot</h2>
+  <p><strong>Duration:</strong> Dec 2022 – Apr 2023</p>
 
   <p>
     This project features an autonomous BLE + RF-based robot designed to follow a human using triangulated signal strength from wearable transmitters. Built using ESP32, the robot uses IR sensors for obstacle detection and supports I2C and CAN communication.
@@ -258,8 +258,8 @@ const project7 = `
 `;
 
 const project9 = `
-  <h2>Autonomous Parking System</h2>
-  <p><strong>Duration:</strong> Aug – Nov 2022</p>
+  <h2>Autonomous Parking System Using RFID Technology</h2>
+  <p><strong>Duration:</strong> Feb – May 2022</p>
 
   <p>
     Developed an embedded system on Raspberry Pi that autonomously detects and parks in designated slots using Lidar and OpenCV. Combined lane detection and real-time path planning for parking logic.
@@ -287,8 +287,8 @@ const project9 = `
 `;
 
 const project10 = `
-  <h2>5-Layer PCB SI Optimization</h2>
-  <p><strong>Duration:</strong> Sep – Dec 2024</p>
+  <h2>Reducing Power and Ground Voltage Noise Using Cadence PowerSI</h2>
+  <p><strong>Duration:</strong> Oct – Dec 2024</p>
 
   <p>
     This project focused on optimizing signal integrity (SI) in a 5-layer PCB by simulating power/ground impedance using Cadence PowerSI. Applied decoupling capacitors and refined layout constraints to suppress voltage noise.
@@ -359,7 +359,7 @@ const expZIP = `
 const expHyperion = `
   <h2>Electrical Transmission & Autonomous Head</h2>
   <p><strong>Company:</strong> Team Hyperion – Solar EV Club</p>
-  <p><strong>Duration:</strong> Apr 2022 – Aug 2023</p>
+  <p><strong>Duration:</strong> Jul 2021 – Aug 2023</p>
 
   <p>
     Led development of the electrical system in a national-level solar electric vehicle project. Designed MPPT converters, battery management circuits, and embedded control units for motor drive.
@@ -369,7 +369,7 @@ const expHyperion = `
     Integrated sensors (IR, RF, Lidar) and built a robust energy management framework that helped achieve podium ranks in ESVC and SUVC competitions.
   </p>
 
-  <p><strong>Technologies & Tools:</strong> ESP32, Lidar, CAN Bus, MPPT, Battery Systems</p>
+  <p><strong>Technologies & Tools:</strong> ESP32, CAN Bus, MPPT, Battery Systems</p>
 
   <p><strong>Skills Demonstrated:</strong> Power Electronics, Embedded Integration, Team Leadership</p>
 
@@ -382,14 +382,14 @@ const expQA = `
   <p><strong>Duration:</strong> Jan 2022 – Feb 2022</p>
 
   <p>
-    Validated SoC-based modules and switching power supplies using test automation plans. Logged and verified outputs using logic analyzers and test jigs.
+    Validated SoC-based modules and switching power supplies using test automation plans. Logged and verified outputs using logic analyzers.
   </p>
 
   <p>
-    Contributed to a 10% improvement in QA turnaround by identifying power distribution issues through flow analysis.
+    Contributed to a 20% improvement in QA turnaround by identifying power distribution issues through flow analysis.
   </p>
 
-  <p><strong>Technologies & Tools:</strong> Python, Test Benches, Logic Analyzer, Power Flow Analysis</p>
+  <p><strong>Technologies & Tools:</strong> Test Benches, Logic Analyzer, Power Flow Analysis</p>
 
   <p><strong>Skills Demonstrated:</strong> Firmware QA, Power Debugging, Embedded Validation</p>
 
@@ -399,7 +399,7 @@ const expQA = `
 const expTA = `
   <h2>Teaching Assistant (Physics)</h2>
   <p><strong>Company:</strong> San Diego State University</p>
-  <p><strong>Duration:</strong> Spring 2024 – Present</p>
+  <p><strong>Duration:</strong> Jan 2024 – Present</p>
 
   <p>
     Taught and managed lab sessions for Physics 196 (Electricity & Magnetism) and Physics 182A (Physical Measurement Lab). Covered topics like circuits, capacitors, inductance, and Faraday’s Law.

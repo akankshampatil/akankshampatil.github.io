@@ -46,7 +46,7 @@
         <img src="images/proj_reconfig.jpg" alt="Reconfig Logic">
         <div class="card-body">
           <h3 class="card-title">Reconfigurable Logic for IoT Devices</h3>
-          <p class="card-subtitle">Dec 2023 – Jan 2024</p>
+          <p class="card-subtitle">Aug 2024 – Nov 2024</p>
           <p class="tags">Verilog · FSM · Power Modes</p>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <img src="images/proj_temp.jpg" alt="CTAT">
         <div class="card-body">
           <h3 class="card-title">Analog Temperature Sensor (ASAP7 CTAT)</h3>
-          <p class="card-subtitle">Jan 2024 – Mar 2024</p>
+          <p class="card-subtitle">Jan 2025 – Mar 2025</p>
           <p class="tags">HSPICE · ASAP7 · Monte Carlo</p>
         </div>
       </div>
@@ -63,17 +63,26 @@
       <div class="card" onclick="openModal(project5)">
         <img src="images/proj_dcdc.jpg" alt="DC-DC">
         <div class="card-body">
-          <h3 class="card-title">DC-DC Boost Converter</h3>
+          <h3 class="card-title">High-Efficiency DC-DC Converter for IOT Devices</h3>
           <p class="card-subtitle">Aug 2024 – Nov 2024</p>
           <p class="tags">LTSpice · 180nm CMOS · Power</p>
+        </div>
+      </div>
+
+     <div class="card" onclick="openModal(project10)">
+        <img src="images/proj_pcb.jpg" alt="PCB">
+        <div class="card-body">
+          <h3 class="card-title">Reducing Power and Ground Voltage Noise Using Cadence PowerSI</h3>
+          <p class="card-subtitle">Oct 2024 - Dec 2024</p>
+          <p class="tags">Signal Integrity · Altium · Reflection</p>
         </div>
       </div>
 
       <div class="card" onclick="openModal(project6)">
         <img src="images/proj_microstrip.jpg" alt="Microstrip">
         <div class="card-body">
-          <h3 class="card-title">Microstrip Line & Antenna</h3>
-          <p class="card-subtitle">Sep 2023 – Dec 2023</p>
+          <h3 class="card-title">Microstrip Line Design and Analysis</h3>
+          <p class="card-subtitle">Aug 2024 – Oct 2024</p>
           <p class="tags">TXLine · HFSS · Impedance Matching</p>
         </div>
       </div>
@@ -81,8 +90,8 @@
       <div class="card" onclick="openModal(project7)">
         <img src="images/proj_antenna.jpg" alt="Antenna">
         <div class="card-body">
-          <h3 class="card-title">Monopole & Dipole Antennas</h3>
-          <p class="card-subtitle">Sep 2023 – Dec 2023</p>
+          <h3 class="card-title">Half-wave Dipole and Quater-wave Monopole Antenna Simulation Desgin</h3>
+          <p class="card-subtitle">Aug 2023 – Dec 2023</p>
           <p class="tags">HFSS · S11 · Radiation Pattern</p>
         </div>
       </div>
@@ -90,8 +99,8 @@
       <div class="card" onclick="openModal(project8)">
         <img src="images/proj_robot.jpg" alt="Robot">
         <div class="card-body">
-          <h3 class="card-title">Human Following Robot</h3>
-          <p class="card-subtitle">2022</p>
+          <h3 class="card-title">Autonomous Human Following Luggage Carrying Robot</h3>
+          <p class="card-subtitle">Dec 2022 - Apr 2023</p>
           <p class="tags">RF · BLE · ESP32 · Sensors</p>
         </div>
       </div>
@@ -99,44 +108,16 @@
       <div class="card" onclick="openModal(project9)">
         <img src="images/proj_parking.jpg" alt="Parking">
         <div class="card-body">
-          <h3 class="card-title">Autonomous Parking System</h3>
-          <p class="card-subtitle">2022</p>
+          <h3 class="card-title">Autonomous Parking System Using RFID Technology</h3>
+          <p class="card-subtitle">Feb 2022 - May 2022</p>
           <p class="tags">GPS · Path Planning · Microcontroller</p>
         </div>
       </div>
 
-      <div class="card" onclick="openModal(project10)">
-        <img src="images/proj_pcb.jpg" alt="PCB">
-        <div class="card-body">
-          <h3 class="card-title">5-Layer PCB SI Optimization</h3>
-          <p class="card-subtitle">Fall 2023</p>
-          <p class="tags">Signal Integrity · Altium · Reflection</p>
-        </div>
-      </div>
+      
 
     </div>
   </section>
 
- <!-- <script>
-    const project1 = `<h2>Analog Integrated Circuit Design Project</h2><p><strong>Duration:</strong> Jan – Apr 2024</p><p>Designed 2-stage op-amp with 2756.25V/V gain and 53° PM using Cadence and TSMC tech. Simulated gain, CMRR, frequency response. Carefully selected W/L, CL, and biasing for performance.</p><p><strong>GitHub:</strong> Coming Soon</p><p><strong>Learnings:</strong> Biasing, phase margin tuning</p><p><strong>Future Work:</strong> Layout-based optimization</p>`;
-
-    const project2 = `<h2>VLSI Circuit Design Course Projects</h2><p><strong>Duration:</strong> Jan – Apr 2024</p><p>SPICE modeling for NMOS/PMOS, inverter delay optimization, gate sizing, and logic design using pass transistor, pseudo NMOS.</p><p><strong>GitHub:</strong> Coming Soon</p><p><strong>Learnings:</strong> Delay modeling, trade-offs</p><p><strong>Future Work:</strong> Dynamic logic implementation</p>`;
-
-    const project3 = `<h2>Reconfigurable Logic for IoT Devices</h2><p>FSM with PLL-mode switching. Simulated in Vivado. Reduced idle power by 30% for IoT scenarios.</p><p><strong>GitHub:</strong> github.com/akankshampatil/reconfigurable-logic-iot</p><p><strong>Learnings:</strong> Dynamic logic design</p>`;
-
-    const project4 = `<h2>Analog Temperature Sensor</h2><p>CTAT + PTAT using HSPICE + ASAP7. Monte Carlo simulations for W/L, Vth, Temp. Analyzed variability and VOUT trend over 100+ samples.</p><p><strong>GitHub:</strong> github.com/akankshampatil/analog-temp-sensor-hspice</p>`;
-
-    const project5 = `<h2>DC-DC Boost Converter</h2><p>Designed in LTSpice using 180nm CMOS. Achieved >90% efficiency with stable VOUT. Transient and line/load response evaluated.</p>`;
-
-    const project6 = `<h2>Microstrip Line & Antenna</h2><p>Designed matched line for 50Ω using TXLine. Simulated in HFSS. Analyzed impedance, S11, and radiation pattern.</p>`;
-
-    const project7 = `<h2>Monopole & Dipole Antennas</h2><p>Built and simulated half-wave dipole and quarter-wave monopole. Validated impedance matching and RF gain parameters.</p>`;
-
-    const project8 = `<h2>Human Following Robot</h2><p>RF + BLE controlled ESP32 robot. IR sensors and motion detection integrated. Designed for secure luggage tracking.</p>`;
-
-    const project9 = `<h2>Autonomous Parking System</h2><p>Ultrasound + GPS guided pathing and parking logic. Tested using STM32 board and embedded C.</p>`;
-
-    const project10 = `<h2>5-Layer PCB SI Optimization</h2><p>Simulated trace ringing and impedance on Altium stack. Applied termination and shielding for signal clarity.</p>`;
-  </script> -->
 </body>
 </html>
