@@ -26,9 +26,9 @@ const project1 = `
   <p><strong>Duration:</strong> Jan – Apr 2024</p>
 
   <p>
-    This project focuses on designing a <strong>high-gain, two-stage operational amplifier</strong> for analog signal processing using the <strong>TSMC 0.4μm CMOS process</strong> in Cadence Virtuoso. 
-    The op-amp was carefully simulated for <strong>DC gain, phase margin, gain-bandwidth product (GBW), output swing, and slew rate</strong>. The final design achieved a <strong>DC gain of 2756.25 V/V</strong> and 
-    a <strong>phase margin of 53°</strong> with a 5pF load, operating on a 3.2V single supply.
+    This project focuses on designing a high-gain, two-stage operational amplifier for analog signal processing using the TSMC 0.4μm CMOS process in Cadence Virtuoso. 
+    The op-amp was carefully simulated for DC gain, phase margin, gain-bandwidth product (GBW), output swing, and slew rate. The final design achieved a DC gain of 2756.25 V/V and 
+    a phase margin of 53° with a 5pF load, operating on a 3.2V single supply.
   </p>
 
   <p>
