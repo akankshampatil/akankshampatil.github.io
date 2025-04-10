@@ -245,6 +245,11 @@ const project7 = `
       human-following-robot
     </a>
   </p>
+   
+  <video width="20%" height="auto" controls>
+  <source src="https://raw.githubusercontent.com/akankshampatil/human-following-robot/main/Human%20following%20Luggage%20carrying%20robot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
   <p><strong>Technologies & Tools:</strong> ESP32, BLE, RF Modules, Arduino IDE</p>
 
@@ -274,7 +279,10 @@ const project9 = `
       autonomous-parking-system
     </a>
   </p>
-
+  <video width="40%" height="auto" controls>
+  <source src="https://raw.githubusercontent.com/akankshampatil/autonomous-parking-system/main/Autonomous%20parking%20system.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <p><strong>Technologies & Tools:</strong> Raspberry Pi, Lidar, Python, OpenCV</p>
 
   <p><strong>Skills Demonstrated:</strong> Computer Vision, Embedded Robotics, Lidar Navigation</p>

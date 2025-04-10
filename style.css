@@ -8,7 +8,7 @@ body {
 
 .navbar {
   background-color: #f0f0f0;
-  padding: 1rem 2rem;
+  padding: 0.01rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ body {
 }
 
 .section {
-  padding: 40px 10%;
+  padding: 0.01px 10%;
 }
 
 .profile-pic {
